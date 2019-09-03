@@ -16,7 +16,6 @@ import { Component, OnInit } from '@angular/core';
             `,
   // styleUrls: ['./class-bind.component.css']
   styles: [` 
-
   .text-danger{color:#ff0000;}    
   .text-success{color:#038a03;}   
   .text-primary{color:#0072ea;}   
