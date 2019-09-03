@@ -4,11 +4,13 @@ import {FormsModule} from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PropBindComponent } from './prop-bind/prop-bind.component';
+import { ClassBindComponent } from './class-bind/class-bind.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PropBindComponent
+    PropBindComponent,
+    ClassBindComponent
   ],
   imports: [
     BrowserModule,
