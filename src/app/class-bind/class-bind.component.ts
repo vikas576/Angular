@@ -9,19 +9,20 @@ import { Component, OnInit } from '@angular/core';
             <h4 [class]="textInfo"> Info with class property binding </h4>
             <h4 [class]="textInfo" class="text-big"> Property binding and class attribute used together=> class attr will elapsed. like here text-big is not working </h4> <br>
             <h4 [class.text-alert]="hasAlert"> conditionally use of single class "text-alert"==> for this class property is followed by class name.<p> //use single class conditoinally==> change the boolean value to display the effect of condition . </p> <p> //if true then text-alert class will apply otherwise the color of text will be black.</p> </h4> <br>
-            <h4 [ngClass]="messageClasses" > use multiple class by  class binding </h4>
-            <h4 class="text-danger"> Codevolution </h4>
+            <h4 [ngClass]="messageClasses" > use multiple class by  ngClass  directive of angular </h4>
+            <h4 [className]="textSuccess"> use of ClassName attribute -- we can also put shorthand "class" instead of "className" </h4>
+            <h4 [class.text-alert]="setMessageClass()"> use of muffets for class binding. </h4>
 
             `,
   // styleUrls: ['./class-bind.component.css']
-  styles: [`
+  styles: [` 
 
-  .text-danger{color:#ff0000;}
-  .text-success{color:#038a03;}
-  .text-primary{color:#0072ea;}
-  .text-info{color:#0072ea;}
-  .text-italic{font-style="italic";}
-  .text-alert{color:#d49f03;}
+  .text-danger{color:#ff0000;}    
+  .text-success{color:#038a03;}   
+  .text-primary{color:#0072ea;}   
+  .text-info{color:#0072ea;}   
+  .text-italic{font-style="italic";}  
+  .text-alert{color:#d49f03;}       
   .text-big{font-size:30px;}
   .text-dark{font-weight:bold;}
   `],
@@ -46,6 +47,11 @@ export class ClassBindComponent implements OnInit {
   public hasAlert= true;
   public textbold= true;
  
+  setMessageClass(){
+    return this.hasSuccess;
+    
+  }
+
   
   
   //  use [ngClass] directive for to use conditionally multiClasses together 
