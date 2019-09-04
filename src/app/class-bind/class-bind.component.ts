@@ -62,6 +62,13 @@ export class ClassBindComponent implements OnInit {
     "text-dark": this.textbold,
   }
 
+  public multipleClasses = {
+  "text-alert":false,
+  "text-danger":true,
+
+  }
+ 
+
   constructor() { }
 
   ngOnInit() {
