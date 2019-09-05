@@ -1,0 +1,8 @@
+<div [ngStyle]= "main_Classes">
+    <h3 [ngClass]="textDanger"> Event Binding</h3>
+    <h4 [class]="textDanger">{{serverStatus}}</h4>
+    <h3 [style.color]="'blue'">{{triggerType}}</h3>
+    <!-- <button [disabled]="!allowButton" [style.background]="'#7f7fec'"    (click)="onCreateServer()">Add Server1</button> -->
+    <button [disabled]="!allowButton" [class]="textBg"  (click)="onCreateServer($event)">Add Server2</button>
+    
+</div>
