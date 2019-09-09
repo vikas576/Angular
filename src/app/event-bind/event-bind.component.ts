@@ -34,7 +34,7 @@ setTimeout(() => {
     this.serverStatus = 'connected';
     this.textDanger = 'text-success';
     this.textBg = 'bg_success';
-    console.log(event);
+    console.log('This is the event as a parameter' + event);
     this.triggerType = 'event trigger type is : ' + event.type;
 
   }
