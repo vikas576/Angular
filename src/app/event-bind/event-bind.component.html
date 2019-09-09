@@ -4,5 +4,11 @@
     <h3 [style.color]="'blue'">{{triggerType}}</h3>
     <!-- <button [disabled]="!allowButton" [style.background]="'#7f7fec'"    (click)="onCreateServer()">Add Server1</button> -->
     <button [disabled]="!allowButton" [class]="textBg"  (click)="onCreateServer($event)">Add Server2</button>
-    
+<p>// (input) event binding ==> example</p>
+<input type="text" (input)="updateSertverName($event)"/>
+<p>{{inputStatus}}</p>
+<input type="text" [(ngModel)]="address1"/>
+<p>{{address1}} </p>
+
+
 </div>
