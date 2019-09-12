@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TempltRefVaribleComponent implements OnInit {
 
   constructor() { }
-  onSaveServer(){
+  onSaveServer() {
   }
   ngOnInit() {
   }
