@@ -1,0 +1,8 @@
+<h1 class="text-center text-primary"><== !ngswitch works!==></h1>
+
+<div class="col-md-12 text-center" [ngSwitch]="color">
+    <div class="col-md-6" *ngSwitchCase="'red'"><h2>red color picked</h2></div>
+    <div class="col-md-6" *ngSwitchCase="'green'"><h2>green color picked</h2></div>
+    <div class="col-md-6" *ngSwitchCase="'blue'"><h2>blue color picked</h2></div>
+    <div class="col-md-6" *ngSwitchDefault><h2>default no color matched</h2></div>
+</div>
