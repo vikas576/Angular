@@ -9,6 +9,7 @@ import { EventBindComponent } from './event-bind/event-bind.component';
 import { TempltRefVaribleComponent } from './templt-ref-varible/templt-ref-varible.component';
 import { NgifelseComponent } from './ngifelse/ngifelse.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
+import { NgforComponent } from './ngfor/ngfor.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
     EventBindComponent,
     TempltRefVaribleComponent,
     NgifelseComponent,
-    NgswitchComponent
+    NgswitchComponent,
+    NgforComponent
   ],
   imports: [
     BrowserModule,
