@@ -1,0 +1,26 @@
+
+<div class="col-md-12 text-center">
+    <input type="text" *ngIf="displayName" value="servername1 ">
+
+
+    <input type="text"  *ngIf="serverCondition; else serverFailed"  value="servername2 ">
+
+
+    <ng-template #serverFailed>
+      <p>server is failed</p>
+    </ng-template>
+  </div>
+
+//seperate *ngIf  with if and else part
+  <div *ngIf="displayName1; then thenBlock; else elseBlock" > </div>
+
+  <ng-template #thenBlock>
+<h2> print in true codition</h2>
+
+  </ng-template>
+
+
+  <ng-template #elseBlock>
+      <h2> print in false codition</h2>
+
+    </ng-template>
