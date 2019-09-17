@@ -10,6 +10,7 @@ import { TempltRefVaribleComponent } from './templt-ref-varible/templt-ref-varib
 import { NgifelseComponent } from './ngifelse/ngifelse.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
+import { BasicAssignment3Component } from './basic-assignment3/basic-assignment3.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgforComponent } from './ngfor/ngfor.component';
     TempltRefVaribleComponent,
     NgifelseComponent,
     NgswitchComponent,
-    NgforComponent
+    NgforComponent,
+    BasicAssignment3Component
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+
+<h1 class="text-center text-info"><==!basic-assignment3 works!==></h1>
+<div class="col-md-12 text-center form-group">
+    <p class="text-center">//toggle paragraph on button click</p>
+
+  <button class="btn btn-danger" (click)="showSecret1 = !showSecret1" > Display Details1-toggle</button>
+    <h5 *ngIf="showSecret1" > 'secret password = tuna'</h5>
+</div>
+
+<p class="text-center">//push to log array and print incremental log clicks by using *ngfor</p>
+<div class="col-md-12 text-center">
+    <button class="btn btn-danger" (click)="onDisplay()"> Display Details2</button>
+      <h5 *ngIf="showSecret2" > 'secret password = tuna'</h5><br>
+      <h5 *ngFor="let logItem of log" [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+        [ngClass]="{'white-text': logItem  >= 5 }" >
+        {{logItem + ','}}
+      </h5>
+</div>
